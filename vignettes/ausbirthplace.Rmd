@@ -1,0 +1,29 @@
+---
+title: "ausbirthplace"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ausbirthplace}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ausbirthplace)
+library(broom)
+```
+
+A demonstration of the census data contained in the `ausbirthplace` package
+
+```{r}
+library(ggplot2)
+census_birthplace |>
+  ggplot(aes(x=birth, y = count)) +
+  geom_col()
+```
