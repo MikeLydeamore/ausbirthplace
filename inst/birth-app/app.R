@@ -9,9 +9,10 @@
 
 library(shiny)
 library(plotly)
+library(palmerpenguins)
 reactlog::reactlog_enable()
 
-# Define UI for application that draws a histogram
+# Define UI for application that draws a histogramx
 ui <- fluidPage(
 
     # Application title
